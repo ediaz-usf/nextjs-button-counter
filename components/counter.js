@@ -15,14 +15,16 @@ export default function Counter({ initialCount = 0, initialStep = 1 }) {
 
     return (
         <>
-            <div id='buttons'>
-                <button onClick={increment}>+{step}</button>
-                <button onClick={decrement} disabled={count - step < 0}>-{step}</button>
-                <button onClick={reset}>Reset</button>      
-            </div>
+            <div className='counter'>
+                <div id='buttons'>
+                    <button onClick={increment}>+{step}</button>
+                    <button onClick={decrement} disabled={count - step < 0}>-{step}</button>
+                    <button onClick={reset}>Reset</button>
+                </div>
 
-            <div aria-live='polite'>
-                Count: {count}
+                <div aria-live='polite'>
+                    Count: {count}
+                </div>
             </div>
         </>
     )

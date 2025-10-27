@@ -1,3 +1,5 @@
+import './globals.css';
+
 export const metadata = {
   title: 'Button Counter',
   description: 'Simple Button Counter app for assignment',
