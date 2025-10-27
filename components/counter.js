@@ -6,10 +6,9 @@ export default function Counter({ initialCount = 0, initialStep = 1, showStepInp
     const [count, setCount] = useState(initialCount);
     const [step, setStep] = useState(initialStep);
 
-    const increment = () => setCount(count + step);
-    const decrement = () => {
-        if (count - step >= 0) setCount(count - step);
-    };
+    const increment = () => setCount(c => c + step);
+    const decrement = () => setCount(c => (c - step >= 0 ? c - step : c));
+
 
     const reset = () => setCount(0);
 
