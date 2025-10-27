@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-export default function Counter({ initialCount = 0, initialStep = 1 }) {
+export default function Counter({ initialCount = 0, initialStep = 1, showStepInput = false }) {
 
     const [count, setCount] = useState(initialCount);
     const [step, setStep] = useState(initialStep);
@@ -26,6 +26,19 @@ export default function Counter({ initialCount = 0, initialStep = 1 }) {
                     <button onClick={decrement} disabled={count - step < 0}>-{step}</button>
                     <button onClick={reset}>Reset</button>
                 </div>
+
+                {showStepInput && (
+                <div>
+                <label htmlFor="step">Step: </label>
+                <input
+                    id="step"
+                    type="number"
+                    value={step}
+                    min="1"
+                    onChange={(e) => setStep(Number(e.target.value))}
+                />
+                </div>
+            )}
 
             </div>
         </>

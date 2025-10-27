@@ -7,7 +7,7 @@ export default function Home() {
 
       <Counter />
 
-      <Counter initialCount={10} initialStep={10} />
+      <Counter initialCount={10} initialStep={10} showStepInput={true} />
     </main>
   );
 }
