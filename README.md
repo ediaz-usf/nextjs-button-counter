@@ -22,44 +22,44 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## MVP Checklist
 # Counter Component
 
-Displays the current count dynamically (aria-live="polite").
+✅ Displays the current count dynamically (aria-live="polite").
 
-Buttons: Increment, Decrement, and Reset.
+✅ Buttons: Increment, Decrement, and Reset.
 
-Optional Step input (<input type="number">) allows changing the step amount.
+✅ Optional Step input (<input type="number">) allows changing the step amount.
 
 # Props
 
-initialCount (default = 0)
+✅ initialCount (default = 0)
 
-initialStep (default = 1)
+✅ initialStep (default = 1)
 
-showStepInput (boolean, controls if the input appears)
+✅ showStepInput (boolean, controls if the input appears)
 
 # Accessibility
 
-Uses real <button> elements for keyboard access.
+✅ Uses real <button> elements for keyboard access.
 
-Count region announced via aria-live="polite".
+✅ Count region announced via aria-live="polite".
 
-Disabled buttons are visually and semantically clear.
+✅ Disabled buttons are visually and semantically clear.
 
-Input has an associated <label>.
+✅ Input has an associated <label>.
 
 # State Management
 
-Uses useState for both count and step.
+✅ Uses useState for both count and step.
 
-Decrement button disabled when count - step < 0.
+✅ Decrement button disabled when count - step < 0.
 
 # Home Page
 
-Renders one counter with defaults (0, step 1).
+✅ Renders one counter with defaults (0, step 1).
 
-Renders one counter with custom props (count 10, step 10, step input enabled).
+✅ Renders one counter with custom props (count 10, step 10, step input enabled).
 
 # Quality
 
-No runtime errors.
+✅ No runtime errors.
 
-Clean layout and simple CSS.
+✅ Clean layout and simple CSS.
