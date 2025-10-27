@@ -21,7 +21,7 @@ export default function Counter({ initialCount = 0, initialStep = 1, showStepInp
                 </div>
 
                 {/* Buttons to increment, decrement, and reset the count */}
-                <div id='buttons'>
+                <div className='buttons'>
                     <button onClick={increment}>+{step}</button>
                     <button onClick={decrement} disabled={count - step < 0}>-{step}</button>
                     <button onClick={reset}>Reset</button>
