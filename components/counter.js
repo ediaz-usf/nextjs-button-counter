@@ -10,7 +10,7 @@ export default function Counter({ initialCount = 0, initialStep = 1, showStepInp
     const decrement = () => setCount(c => (c - step >= 0 ? c - step : c));
 
 
-    const reset = () => setCount(0);
+    const reset = () => setCount(initialCount);
 
     return (
         <>
